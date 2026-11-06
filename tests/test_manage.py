@@ -369,7 +369,7 @@ class ManageTests(unittest.TestCase):
         (source / "scripts").mkdir(parents=True)
         manager = source / "scripts/manage.py"
         shutil.copy2(MANAGER, manager)
-        shutil.copy2(PROJECT_ROOT / "VERSION", source / "VERSION")
+        (source / "VERSION").write_text("0.0.1\n", encoding="utf-8")
         shutil.copytree(PROJECT_ROOT / "skills", source / "skills",
                         ignore=shutil.ignore_patterns("__pycache__", "*.pyc"))
         self.run_manager("install", "--hooks", global_scope=True, manager=manager)
@@ -378,15 +378,15 @@ class ManageTests(unittest.TestCase):
         (source_skill / "SKILL.md").write_bytes(updated_skill)
         (source_skill / "references/color_zh.md").unlink()
         (source_skill / "references/extra.md").write_bytes(b"New supporting reference.\n")
-        (source / "VERSION").write_text("0.1.1\n", encoding="utf-8")
+        (source / "VERSION").write_text("0.0.2\n", encoding="utf-8")
         updated = json.loads(self.run_manager("install", global_scope=True, manager=manager).stdout)
         installed_skill = self.codex_home / "skills" / NAME
-        self.assertEqual(updated["version"], "0.1.1")
+        self.assertEqual(updated["version"], "0.0.2")
         self.assertTrue(updated["hooks"])
         self.assertEqual((installed_skill / "SKILL.md").read_bytes(), updated_skill)
         self.assertEqual((installed_skill / "references/extra.md").read_bytes(), b"New supporting reference.\n")
         self.assertFalse((installed_skill / "references/color_zh.md").exists())
-        self.assertEqual(json.loads(self.run_manager("status", global_scope=True, manager=manager).stdout)["version"], "0.1.1")
+        self.assertEqual(json.loads(self.run_manager("status", global_scope=True, manager=manager).stdout)["version"], "0.0.2")
         self.run_manager("uninstall", global_scope=True, manager=manager)
         self.assertFalse(installed_skill.exists())
 

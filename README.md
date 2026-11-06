@@ -4,25 +4,13 @@
 
 I Asked for a Button is a Skill for Codex and other coding assistants that helps reduce unnecessary wording and work in software development, copy, documentation, and visual deliverables.
 
-## What it covers
+## Problems it addresses
 
-### Writing and successive edits
+Outputs can contain plenty of words while leaving the reader's actual needs unclear. Repetition, stock phrasing, and commentary about the work crowd out useful content.
 
-Select information for the reader and purpose, retaining needed instructions and the author's natural wording. Reduce repetition, formulaic slogans, unprompted rebuttals, and stock closing caveats. Headings and control labels name the actual purpose, action, and outcome.
+Successive edits can lose the original intent: the latest instruction displaces earlier requirements, or removed content returns. Local fixes can also accumulate without a coherent view of the finished document, interface, or image.
 
-Carry requirements through successive edits so removed content stays out of later replies and editing commentary. When asked for only text, code, or JSON, deliver that content directly.
-
-### Interfaces and visual work
-
-Use layout, labels, defaults, and control states to communicate actions. Place explanations according to the current task, keeping needed information on the page and optional detail in help where useful.
-
-Visual guidance covers grid alignment, responsive layouts, open menus, relevant control states, and keyboard and touch interaction. The [color guidance](skills/i-asked-for-a-button/references/color.md) considers hierarchy, visibility, and reading comfort. Images and pages omit captions that merely restate production requirements.
-
-### Execution and verification
-
-Work within the authorized scope, make routine reversible decisions, and carry implementation through relevant checks and delivery. Discussion and review requests receive the requested analysis and findings.
-
-Reuse existing work and choose investigations, dependencies, refactors, and tests for the actual task, reducing unnecessary work attached to small changes. Report actual changes, check results, and unresolved issues that affect use.
+Execution can lose proportion: routine decisions keep returning to the user, small tasks attract unrelated work, or authorized implementation stops at a plan. The Skill guides content, design, and effort by the audience, goal, and context, carrying the work through relevant verification and delivery.
 
 ## Install and maintain
 
