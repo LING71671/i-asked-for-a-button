@@ -1,6 +1,6 @@
 <h1 align="center">I Asked for a Button</h1>
 
-<p align="center"><a href="README_zh.md">中文</a> · <a href="#install-and-maintain">Install and maintain</a> · <a href="#use">Use</a> · <a href="examples.md">Examples</a> · <a href="skills/i-asked-for-a-button/SKILL.md">Skill source</a></p>
+<p align="center"><a href="README_zh.md">中文</a> · <a href="#install-and-maintain">Install and maintain</a> · <a href="#use">Use</a> · <a href="skills/i-asked-for-a-button/SKILL.md">Skill source</a></p>
 
 I Asked for a Button is a Skill for Codex and other coding assistants that helps reduce unnecessary explanations and work in software development, documentation, and interface design.
 
@@ -84,10 +84,6 @@ python scripts/manage.py uninstall
 
 ## Use
 
-Open Codex in your project and enter:
-
-```text
-$i-asked-for-a-button Change the Submit label to Save.
-```
+In Codex, enter `$i-asked-for-a-button` followed by your request.
 
 [Contributing](CONTRIBUTING.md) · [Apache License 2.0](LICENSE)

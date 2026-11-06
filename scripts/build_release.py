@@ -23,8 +23,6 @@ ROOT_FILES = (
     "README.md",
     "README_zh.md",
     "VERSION",
-    "examples.md",
-    "examples_zh.md",
 )
 SOURCE_DIRECTORIES = ("skills", "adapters", "scripts", "tests")
 SKILL_FILE = Path("skills") / PROJECT_NAME / "SKILL.md"

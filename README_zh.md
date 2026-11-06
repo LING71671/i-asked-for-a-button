@@ -1,6 +1,6 @@
 <h1 align="center">I Asked for a Button</h1>
 
-<p align="center"><a href="README.md">English</a> · <a href="#安装与维护">安装与维护</a> · <a href="#使用">使用</a> · <a href="examples_zh.md">示例</a> · <a href="skills/i-asked-for-a-button/SKILL.md">Skill 正文</a></p>
+<p align="center"><a href="README.md">English</a> · <a href="#安装与维护">安装与维护</a> · <a href="#使用">使用</a> · <a href="skills/i-asked-for-a-button/SKILL.md">Skill 正文</a></p>
 
 　　I Asked for a Button 是给 Codex 等编程助手使用的 Skill，用于减少软件开发、文档和界面中的多余解释与工作。
 
@@ -84,10 +84,6 @@ python scripts/manage.py uninstall
 
 ## 使用
 
-　　在自己的项目中打开 Codex，在聊天中输入：
-
-```text
-$i-asked-for-a-button 把“提交”按钮改成“保存”。
-```
+　　在 Codex 中输入 `$i-asked-for-a-button`，接着写你的需求。
 
 　　[贡献说明](CONTRIBUTING_zh.md) · [Apache License 2.0](LICENSE)
