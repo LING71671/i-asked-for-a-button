@@ -1,0 +1,9 @@
+private-reference/
+research/
+source-archive/
+dist/
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*

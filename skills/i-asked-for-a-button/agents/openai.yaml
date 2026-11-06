@@ -1,0 +1,4 @@
+interface:
+  display_name: "I Asked for a Button"
+  short_description: "Direct answers and proportionate software changes"
+  default_prompt: "Use $i-asked-for-a-button to complete this request, make routine decisions autonomously, and report the result directly."

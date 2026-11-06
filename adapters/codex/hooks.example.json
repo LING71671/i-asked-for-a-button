@@ -1,0 +1,18 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "^(startup|resume|clear|compact|fork)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"<WORKSPACE>/.agents/skills/i-asked-for-a-button/scripts/session_start.py\"",
+            "commandWindows": "\"<PYTHON_EXE>\" \"<WORKSPACE>\\.agents\\skills\\i-asked-for-a-button\\scripts\\session_start.py\"",
+            "timeout": 3,
+            "additionalContextLimit": 4000
+          }
+        ]
+      }
+    ]
+  }
+}
