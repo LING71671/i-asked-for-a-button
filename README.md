@@ -6,9 +6,9 @@ I Asked for a Button is a Skill for Codex and other coding assistants that helps
 
 ## Problems it addresses
 
-Outputs can contain plenty of words while leaving the reader's actual needs unclear. Repetition, stock phrasing, and commentary about the work crowd out useful content.
+Outputs can contain plenty of words while leaving the reader's actual needs unclear. Repetition, stock phrasing, defensive wording, and commentary about the work crowd out useful content.
 
-Successive edits can lose the original intent: the latest instruction displaces earlier requirements, or removed content returns. Local fixes can also accumulate without a coherent view of the finished document, interface, or image.
+Successive edits can drop earlier requirements or overlook the purpose of a change. Local fixes can also accumulate without a coherent view of the finished document, interface, or image.
 
 Execution can lose proportion: routine decisions keep returning to the user, small tasks attract unrelated work, or authorized implementation stops at a plan. The Skill guides content, design, and effort by the audience, goal, and context, carrying the work through relevant verification and delivery.
 

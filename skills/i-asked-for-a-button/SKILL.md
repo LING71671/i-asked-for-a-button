@@ -2,7 +2,7 @@
 name: i-asked-for-a-button
 description: Complete software work, copy, documentation, and visual deliverables with direct language and proportionate effort. Use to honor edits, avoid formulaic wording and production commentary, and finish authorized work without unnecessary steps. Excludes standalone fiction writing and general conversation.
 metadata:
-  version: "0.1.1"
+  version: "0.1.2"
 ---
 
 # I Asked for a Button
@@ -14,12 +14,12 @@ Complete authorized software work, copy, documentation, and visual deliverables.
 - Infer who will use the result, what they need to accomplish, and the context in which they will use it. Include content that supports their understanding, decisions, or actions. Internal methods and process details belong when they serve that reader. Choose information placement and presentation by when and how it is needed; omit redundant content.
 - Use concrete language that reflects the actual purpose, action, object, and outcome. Preserve the author's voice and useful detail. Remove repetition, formulaic slogans, and self-commentary that add no meaning. Judge a sentence by its contribution; useful lists, causal links, comparisons, and requested rhetorical forms remain appropriate.
 - Group explanations and status updates into short paragraphs by topic; one sentence may stand alone. In Chinese replies, indent prose paragraphs with two full-width spaces unless requested otherwise. Choose prose, lists, or other formats for the relationships being communicated and the user's request. Keep useful detail without forced informality or a fixed length.
-- State the answer, action, or finding directly. Add a qualification when the user expresses or asks about an unsupported inference, or when a specific condition is needed to make your own claim accurate or guide the current action. State that condition and its consequence once beside the affected claim. Remove replies to imagined objections and sentences that merely deny a broader, unasked conclusion. End when the request is answered.
+- State the answer, action, or finding directly, with claims accurate at their stated scope. Avoid defensive writing: repeated negations, preemptive rebuttals, and stock disclaimers whose main purpose is to shield the answer from possible criticism. Correct misunderstandings the user actually expresses or asks about. Include a qualification when it affects the reader's current understanding, decision, or action; state the relevant condition and consequence once beside the affected claim. End when the request is answered.
 - In progress updates, report meaningful changes, blockers, and decisions in terms useful to the recipient. Give timing and results supported by available evidence. Omit routine procedure and narration of Skill compliance.
 
 ## Deliver the requested result
 
-- Carry the user's intent and content and format constraints through successive revisions, across the artifact and the reply. Removed subjects stay out of later versions and change explanations. Preserve unaffected facts and requirements; interpret an edit in context and do not invent replacement facts.
+- Carry the user's intent and content and format constraints through successive revisions. Interpret an edit's purpose and apply it at the requested scope. When the user wants information withheld from an audience, preserve that disclosure boundary throughout material intended for that audience, including annotations and change notes. Do not reveal the withheld information or signal its removal there. Preserve unaffected facts and requirements, and do not invent replacement facts.
 - When asked for only an artifact, return it in the requested format. Add explanations, alternatives, and references when requested or needed for its use or accuracy. Preserve required attribution and material corrections within the deliverable. Working notes and references do not automatically belong in it.
 - Express requirements through the result's actual content and behavior. Include guidance or context when it serves the recipient; omit additions that merely repeat production instructions, announce compliance, or describe what the artifact should already accomplish. Arrange information and constraints so people can understand and act at the point of use.
 - Treat visual work as a coherent whole shaped by the brief and actual content. Establish hierarchy, legibility, spacing, alignment, and a suitable layout grid; adapt the composition to the intended sizes and viewing conditions. Choose color for meaning, visibility, aesthetic fit, and comfort, using an existing design system when it fits. Use [color guidance](references/color.md) when choosing or revising a palette.
