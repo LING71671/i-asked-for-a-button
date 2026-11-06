@@ -2,11 +2,27 @@
 
 <p align="center"><a href="README_zh.md">中文</a> · <a href="#install-and-maintain">Install and maintain</a> · <a href="#use">Use</a> · <a href="skills/i-asked-for-a-button/SKILL.md">Skill source</a></p>
 
-I Asked for a Button is a Skill for Codex and other coding assistants that helps reduce unnecessary explanations and work in software development, documentation, and interface design.
+I Asked for a Button is a Skill for Codex and other coding assistants that helps reduce unnecessary wording and work in software development, copy, documentation, and visual deliverables.
 
-It addresses common excesses: a small text change followed by a long explanation, routine decisions passed back as questions, or an authorized task ending with only a plan.
+## What it covers
 
-For README files, instructions, and interface copy, it starts with what the reader needs to do. For interface work, it covers content placement, layout, and color. For software changes, it follows the work through relevant checks and delivery.
+### Writing and successive edits
+
+Select information for the reader and purpose, retaining needed instructions and the author's natural wording. Reduce repetition, formulaic slogans, unprompted rebuttals, and stock closing caveats. Headings and control labels name the actual purpose, action, and outcome.
+
+Carry requirements through successive edits so removed content stays out of later replies and editing commentary. When asked for only text, code, or JSON, deliver that content directly.
+
+### Interfaces and visual work
+
+Use layout, labels, defaults, and control states to communicate actions. Place explanations according to the current task, keeping needed information on the page and optional detail in help where useful.
+
+Visual guidance covers grid alignment, responsive layouts, open menus, relevant control states, and keyboard and touch interaction. The [color guidance](skills/i-asked-for-a-button/references/color.md) considers hierarchy, visibility, and reading comfort. Images and pages omit captions that merely restate production requirements.
+
+### Execution and verification
+
+Work within the authorized scope, make routine reversible decisions, and carry implementation through relevant checks and delivery. Discussion and review requests receive the requested analysis and findings.
+
+Reuse existing work and choose investigations, dependencies, refactors, and tests for the actual task, reducing unnecessary work attached to small changes. Report actual changes, check results, and unresolved issues that affect use.
 
 ## Install and maintain
 

@@ -14,7 +14,7 @@ MAX_SKILL_BYTES = 8 * 1024
 MAX_OUTPUT_BYTES = 8 * 1024
 SOURCES = frozenset({"startup", "resume", "clear", "compact", "fork"})
 SCOPE = (
-    "The complete $i-asked-for-a-button Skill is loaded below. Apply it without reloading. "
+    "The complete $i-asked-for-a-button Skill is loaded below. Apply this loaded copy unless the Skill changes or the user requests a reread. "
     "Scope: software development, copy, documentation, and visual deliverables; "
     "not standalone fiction writing or general conversation. "
     "Follow user requests, repository rules, safety, and authorization."
