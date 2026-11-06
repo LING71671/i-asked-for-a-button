@@ -90,4 +90,4 @@ python scripts/manage.py uninstall
 
 In Codex, enter `$i-asked-for-a-button` followed by your request.
 
-[Contributing](CONTRIBUTING.md) · [Apache License 2.0](LICENSE)
+[Acknowledgments](SPONSORED.md) · [Contributing](CONTRIBUTING.md) · [Apache License 2.0](LICENSE)

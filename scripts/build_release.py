@@ -22,6 +22,8 @@ ROOT_FILES = (
     "LICENSE",
     "README.md",
     "README_zh.md",
+    "SPONSORED.md",
+    "SPONSORED_zh.md",
     "VERSION",
 )
 SOURCE_DIRECTORIES = ("skills", "adapters", "scripts", "tests")

@@ -90,4 +90,4 @@ python scripts/manage.py uninstall
 
 　　在 Codex 中输入 `$i-asked-for-a-button`，接着写你的需求。
 
-　　[贡献说明](CONTRIBUTING_zh.md) · [Apache License 2.0](LICENSE)
+　　[致谢](SPONSORED_zh.md) · [贡献说明](CONTRIBUTING_zh.md) · [Apache License 2.0](LICENSE)
