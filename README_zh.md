@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/logo.svg" alt="less" width="128" height="128" /></p>
+
 <h1 align="center">I Asked for a Button</h1>
 
 <p align="center"><a href="README.md">English</a> · <a href="#安装与维护">安装与维护</a> · <a href="#使用">使用</a> · <a href="skills/i-asked-for-a-button/SKILL.md">Skill 正文</a></p>

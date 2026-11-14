@@ -19,6 +19,7 @@ PROJECT_NAME = "i-asked-for-a-button"
 ROOT_FILES = (
     ".gitignore",
     ".agents/plugins/marketplace.json",
+    "assets/logo.svg",
     "CONTRIBUTING.md",
     "CONTRIBUTING_zh.md",
     "LICENSE",

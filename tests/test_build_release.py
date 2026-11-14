@@ -109,7 +109,7 @@ class ReleaseTests(unittest.TestCase):
         self.assertIn("scripts/build_release.py", relative_members)
         self.assertIn("tests/test_fixture.py", relative_members)
 
-    def test_license_and_root_tests_are_included_without_assets_or_private_experiments(self) -> None:
+    def test_license_logo_and_root_tests_are_included_without_private_experiments(self) -> None:
         license_file = self.write("LICENSE", "Apache License\nVersion 2.0, January 2004\n")
         excluded = (
             "PROJECT_STATUS.md",
@@ -142,6 +142,7 @@ class ReleaseTests(unittest.TestCase):
             members = {name.removeprefix(prefix) for name in archive.namelist()}
             self.assertEqual(archive.read(prefix + "LICENSE"), license_file.read_bytes())
             self.assertIn("tests/test_fixture.py", members)
+            self.assertEqual(archive.read(prefix + "assets/logo.svg"), (self.root / "assets/logo.svg").read_bytes())
             self.assertTrue(set(excluded).isdisjoint(members))
 
     def test_version_mismatch_fails_before_creating_outputs(self) -> None:

@@ -17,7 +17,9 @@
         "shortDescription": "减少软件交付中的多余表达与工作",
         "developerName": "LING71671",
         "category": "Productivity",
-        "websiteURL": "https://github.com/LING71671/i-asked-for-a-button"
+        "websiteURL": "https://github.com/LING71671/i-asked-for-a-button",
+        "logo": "./assets/logo.svg",
+        "composerIcon": "./assets/logo.svg"
       }
     }
   }
