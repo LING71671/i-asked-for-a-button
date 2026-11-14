@@ -1,0 +1,20 @@
+{
+  "name": "i-asked-for-a-button",
+  "interface": {
+    "displayName": "I Asked for a Button"
+  },
+  "plugins": [
+    {
+      "name": "i-asked-for-a-button",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

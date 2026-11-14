@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import hashlib
 import importlib.util
+import json
 import os
 from pathlib import Path
 import stat
@@ -33,6 +34,7 @@ class ReleaseTests(unittest.TestCase):
         for relative in release.ROOT_FILES:
             self.write(relative, f"Release fixture: {relative}\n")
         self.write("VERSION", "0.5.0\n")
+        self.write("plugin.json", json.dumps({"name": "i-asked-for-a-button", "version": "0.5.0"}))
         self.write(
             release.SKILL_FILE,
             '---\nname: i-asked-for-a-button\ndescription: Test fixture.\nmetadata:\n  version: "0.5.0"\n---\n\nSkill body.\n',
@@ -147,6 +149,20 @@ class ReleaseTests(unittest.TestCase):
         with self.assertRaisesRegex(release.ReleaseError, "Version mismatch"):
             release.build_release(self.root)
         self.assertFalse((self.root / "dist").exists())
+
+    def test_plugin_version_mismatch_fails_before_creating_outputs(self) -> None:
+        self.write("plugin.json", json.dumps({"name": "i-asked-for-a-button", "version": "0.4.0"}))
+        with self.assertRaisesRegex(release.ReleaseError, "Version mismatch.*plugin.json"):
+            release.build_release(self.root)
+        self.assertFalse((self.root / "dist").exists())
+
+    def test_invalid_plugin_manifest_fails_before_creating_outputs(self) -> None:
+        for manifest in ("{", "[]", '{"name": "another-plugin", "version": "0.5.0"}'):
+            with self.subTest(manifest=manifest):
+                self.write("plugin.json", manifest)
+                with self.assertRaises(release.ReleaseError):
+                    release.build_release(self.root)
+                self.assertFalse((self.root / "dist").exists())
 
     def test_missing_required_file_fails_before_creating_outputs(self) -> None:
         (self.root / "README_zh.md").unlink()

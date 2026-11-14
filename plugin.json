@@ -1,0 +1,24 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "i-asked-for-a-button",
+  "version": "0.1.2",
+  "description": "Complete software work, copy, documentation, and visual deliverables with direct language and proportionate effort.",
+  "author": {
+    "name": "LING71671",
+    "url": "https://github.com/LING71671"
+  },
+  "homepage": "https://github.com/LING71671/i-asked-for-a-button",
+  "repository": "https://github.com/LING71671/i-asked-for-a-button",
+  "license": "Apache-2.0",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "I Asked for a Button",
+        "shortDescription": "减少软件交付中的多余表达与工作",
+        "developerName": "LING71671",
+        "category": "Productivity",
+        "websiteURL": "https://github.com/LING71671/i-asked-for-a-button"
+      }
+    }
+  }
+}

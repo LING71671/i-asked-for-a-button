@@ -2,7 +2,7 @@
 
 <p align="center"><a href="README.md">English</a> · <a href="#安装与维护">安装与维护</a> · <a href="#使用">使用</a> · <a href="skills/i-asked-for-a-button/SKILL.md">Skill 正文</a></p>
 
-　　I Asked for a Button 是给 Codex 等编程助手使用的 Skill，用于减少软件开发、文案、文档和视觉交付中的多余表达与工作。
+　　I Asked for a Button 是一个 Codex 插件，用于减少软件开发、文案、文档和视觉交付中的多余表达与工作。内含的 Skill 也可以独立安装。
 
 ## 解决什么问题
 
@@ -17,25 +17,50 @@
 ### 全局安装
 
 ```text
-请从 https://github.com/LING71671/i-asked-for-a-button 全局安装 i-asked-for-a-button，按照仓库说明使用附带安装器，并检查安装结果。
+请从 https://github.com/LING71671/i-asked-for-a-button 将 i-asked-for-a-button 作为 Codex 插件全局安装，按照仓库的插件安装说明操作，并检查插件已安装且启用。
 ```
 
 ### 更新
 
 ```text
-请从 https://github.com/LING71671/i-asked-for-a-button 更新全局安装的 i-asked-for-a-button，按照仓库说明使用附带安装器，并检查更新结果。
+请从 https://github.com/LING71671/i-asked-for-a-button 更新全局安装的 i-asked-for-a-button，识别当前是插件还是独立 Skill 安装，按照仓库中对应的说明操作，并检查更新结果。
 ```
 
 ### 卸载
 
 ```text
-请按照 https://github.com/LING71671/i-asked-for-a-button 的说明，使用附带安装器卸载全局安装的 i-asked-for-a-button，并检查是否已移除。
+请按照 https://github.com/LING71671/i-asked-for-a-button 的说明，卸载当前全局安装的 i-asked-for-a-button 插件或独立 Skill，并检查是否已移除。
 ```
 
 <details>
 <summary><strong>手动安装与维护</strong></summary>
 
-### 手动安装
+### Codex 插件
+
+　　使用支持插件命令的 Codex CLI：
+
+```powershell
+codex plugin marketplace add LING71671/i-asked-for-a-button
+codex plugin add i-asked-for-a-button@i-asked-for-a-button
+codex plugin list --marketplace i-asked-for-a-button --json
+```
+
+　　重启 Codex 后，可在“自定义 → 插件”的已安装列表中查看。
+
+　　更新插件：
+
+```powershell
+codex plugin marketplace upgrade i-asked-for-a-button
+codex plugin add i-asked-for-a-button@i-asked-for-a-button
+```
+
+　　卸载插件：
+
+```powershell
+codex plugin remove i-asked-for-a-button@i-asked-for-a-button
+```
+
+### 独立 Skill
 
 　　需要 Python 3.11 或更新版本。从源码目录运行：
 
@@ -53,7 +78,7 @@ python scripts/manage.py install --target "E:\MyProject"
 
 　　更新、查看状态或卸载该项目中的安装时，也使用同一个 `--target`。
 
-### 在 Codex CLI 中自动加载
+### 独立 Skill 在 Codex CLI 中自动加载
 
 　　如果 Codex CLI 支持命令 hooks：
 
@@ -66,7 +91,7 @@ python scripts/manage.py install --hooks
 
 　　再次安装时不加 `--hooks`，会保留已有 hook。
 
-### 更新与卸载
+### 独立 Skill 的更新与卸载
 
 　　更新时，取得新版源码，再运行同一安装命令。可以先预览变更或查看当前安装状态：
 
@@ -88,6 +113,10 @@ python scripts/manage.py uninstall
 
 ## 使用
 
-　　在 Codex 中输入 `$i-asked-for-a-button`，接着写你的需求。
+　　向 Codex 描述任务时，可以明确要求使用 I Asked for a Button。独立安装 Skill 时，也可输入 `$i-asked-for-a-button`，接着写你的需求。
 
-　　[致谢](SPONSORED_zh.md) · [贡献说明](CONTRIBUTING_zh.md) · [Apache License 2.0](LICENSE)
+## 致谢
+
+　　感谢 [LINUX DO 社区](https://linux.do/) 提供项目推广平台。
+
+　　[贡献说明](CONTRIBUTING_zh.md) · [Apache License 2.0](LICENSE)

@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 from dataclasses import dataclass
 import hashlib
+import json
 from pathlib import Path
 import re
 import stat
@@ -17,13 +18,13 @@ import zipfile
 PROJECT_NAME = "i-asked-for-a-button"
 ROOT_FILES = (
     ".gitignore",
+    ".agents/plugins/marketplace.json",
     "CONTRIBUTING.md",
     "CONTRIBUTING_zh.md",
     "LICENSE",
+    "plugin.json",
     "README.md",
     "README_zh.md",
-    "SPONSORED.md",
-    "SPONSORED_zh.md",
     "VERSION",
 )
 SOURCE_DIRECTORIES = ("skills", "adapters", "scripts", "tests")
@@ -138,6 +139,14 @@ def _read_version(root: Path) -> str:
     declared = _skill_version(_required_file(root, SKILL_FILE).read_text(encoding="utf-8-sig"))
     if declared != version:
         raise ReleaseError(f"Version mismatch: VERSION is {version}, SKILL.md metadata.version is {declared}")
+    try:
+        manifest = json.loads(_required_file(root, Path("plugin.json")).read_text(encoding="utf-8-sig"))
+    except json.JSONDecodeError as error:
+        raise ReleaseError("plugin.json must contain valid JSON") from error
+    if not isinstance(manifest, dict) or manifest.get("name") != PROJECT_NAME:
+        raise ReleaseError(f"plugin.json must identify {PROJECT_NAME}")
+    if manifest.get("version") != version:
+        raise ReleaseError(f"Version mismatch: VERSION is {version}, plugin.json version is {manifest.get('version')}")
     return version
 
 

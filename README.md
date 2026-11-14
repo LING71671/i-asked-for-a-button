@@ -2,7 +2,7 @@
 
 <p align="center"><a href="README_zh.md">中文</a> · <a href="#install-and-maintain">Install and maintain</a> · <a href="#use">Use</a> · <a href="skills/i-asked-for-a-button/SKILL.md">Skill source</a></p>
 
-I Asked for a Button is a Skill for Codex and other coding assistants that helps reduce unnecessary wording and work in software development, copy, documentation, and visual deliverables.
+I Asked for a Button is a Codex plugin for reducing unnecessary wording and work in software development, copy, documentation, and visual deliverables. Its Skill can also be installed on its own.
 
 ## Problems it addresses
 
@@ -17,25 +17,50 @@ Execution can lose proportion: routine decisions keep returning to the user, sma
 ### Install globally
 
 ```text
-Install i-asked-for-a-button globally from https://github.com/LING71671/i-asked-for-a-button. Follow the repository instructions, use its bundled installer, and check the installation result.
+Install i-asked-for-a-button globally as a Codex plugin from https://github.com/LING71671/i-asked-for-a-button. Follow the repository's plugin installation instructions and check that the plugin is installed and enabled.
 ```
 
 ### Update
 
 ```text
-Update the global i-asked-for-a-button installation from https://github.com/LING71671/i-asked-for-a-button. Follow the repository instructions, use its bundled installer, and check the update result.
+Update the global i-asked-for-a-button installation from https://github.com/LING71671/i-asked-for-a-button. Identify whether it is installed as a plugin or a standalone Skill, follow the matching repository instructions, and check the result.
 ```
 
 ### Uninstall
 
 ```text
-Uninstall the global i-asked-for-a-button Skill using the installer from https://github.com/LING71671/i-asked-for-a-button. Follow the repository instructions and check that it was removed.
+Uninstall the global i-asked-for-a-button installation. Follow https://github.com/LING71671/i-asked-for-a-button for the installed plugin or standalone Skill and check that it was removed.
 ```
 
 <details>
 <summary><strong>Manual installation and maintenance</strong></summary>
 
-### Manual installation
+### Codex plugin
+
+Use a Codex CLI that supports plugin commands:
+
+```powershell
+codex plugin marketplace add LING71671/i-asked-for-a-button
+codex plugin add i-asked-for-a-button@i-asked-for-a-button
+codex plugin list --marketplace i-asked-for-a-button --json
+```
+
+Restart Codex to refresh the installed plugin list under Customize > Plugins.
+
+To update the plugin:
+
+```powershell
+codex plugin marketplace upgrade i-asked-for-a-button
+codex plugin add i-asked-for-a-button@i-asked-for-a-button
+```
+
+To remove it:
+
+```powershell
+codex plugin remove i-asked-for-a-button@i-asked-for-a-button
+```
+
+### Standalone Skill
 
 Requires Python 3.11 or newer. From the source directory:
 
@@ -53,7 +78,7 @@ python scripts/manage.py install --target "E:\MyProject"
 
 Use the same `--target` when updating, checking status, or uninstalling that project's copy.
 
-### Automatic loading in Codex CLI
+### Automatic loading for the standalone Skill
 
 If your Codex CLI supports command hooks:
 
@@ -66,7 +91,7 @@ Run `/hooks` in a new Codex CLI session, review the command, and approve it thro
 
 Installing again without `--hooks` retains an existing hook.
 
-### Update or remove
+### Update or remove the standalone Skill
 
 To update, get the new source and run the install command again. Preview changes or inspect the current installation with:
 
@@ -88,6 +113,10 @@ python scripts/manage.py uninstall
 
 ## Use
 
-In Codex, enter `$i-asked-for-a-button` followed by your request.
+Ask Codex to use I Asked for a Button when describing your task. For a standalone Skill installation, enter `$i-asked-for-a-button` followed by your request.
 
-[Acknowledgments](SPONSORED.md) · [Contributing](CONTRIBUTING.md) · [Apache License 2.0](LICENSE)
+## Acknowledgments
+
+Thanks to the [LINUX DO community](https://linux.do/) for providing a platform to promote this project.
+
+[Contributing](CONTRIBUTING.md) · [Apache License 2.0](LICENSE)
