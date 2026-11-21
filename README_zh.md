@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/logo.svg" alt="less" width="128" height="128" /></p>
+<p align="center"><img src="assets/logo.svg" alt="黑白按钮" width="128" height="128" /></p>
 
 <h1 align="center">I Asked for a Button</h1>
 
@@ -12,7 +12,7 @@
 
 　　连续修改容易丢失此前约定，也容易忽略修改背后的意图。局部修补不断增加，文档、界面或图像却缺少整体判断。
 
-　　执行任务也容易失去分寸：常规决定反复交回用户，简单工作附带无关工程，或已经获准实施却停在计划上。这个 Skill 根据读者、目标和上下文指导内容取舍、设计与工作量，把任务推进到相关验证和交付。
+　　有时助手找到可能的原因就停下了，修复和验证都要再催一次。用户已经要求动手时，这个 Skill 会引导助手直接做能做的下一步，并验证结果。即使一处卡住，也可以先完成其他不受影响的部分。
 
 ## 安装与维护
 
@@ -115,7 +115,9 @@ python scripts/manage.py uninstall
 
 ## 使用
 
-　　向 Codex 描述任务时，可以明确要求使用 I Asked for a Button。独立安装 Skill 时，也可输入 `$i-asked-for-a-button`，接着写你的需求。
+　　Skill 加载后，照常描述任务就行。想明确指定它时，可以提到 I Asked for a Button。独立安装时，也可以用 `$i-asked-for-a-button` 调用。
+
+　　比如直接说“导出没存到我选的文件夹，帮我修好”。助手可以沿着用户选的路径找到写文件的地方，修复后实际导出一次，看文件存到了哪里。
 
 ## 致谢
 

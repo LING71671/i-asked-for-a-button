@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/logo.svg" alt="less" width="128" height="128" /></p>
+<p align="center"><img src="assets/logo.svg" alt="A black and white push button" width="128" height="128" /></p>
 
 <h1 align="center">I Asked for a Button</h1>
 
@@ -12,7 +12,7 @@ Outputs can contain plenty of words while leaving the reader's actual needs uncl
 
 Successive edits can drop earlier requirements or overlook the purpose of a change. Local fixes can also accumulate without a coherent view of the finished document, interface, or image.
 
-Execution can lose proportion: routine decisions keep returning to the user, small tasks attract unrelated work, or authorized implementation stops at a plan. The Skill guides content, design, and effort by the audience, goal, and context, carrying the work through relevant verification and delivery.
+An assistant may stop after finding a likely cause, leaving you to ask for the fix and its verification. When you've asked it to implement a change, the Skill directs it to take the next available step and check the result. If one part is blocked, it can still finish the independent parts.
 
 ## Install and maintain
 
@@ -115,7 +115,9 @@ python scripts/manage.py uninstall
 
 ## Use
 
-Ask Codex to use I Asked for a Button when describing your task. For a standalone Skill installation, enter `$i-asked-for-a-button` followed by your request.
+When the Skill is loaded, describe the task in your own words. To select it explicitly, mention I Asked for a Button or use `$i-asked-for-a-button` for a standalone installation.
+
+“Export ignores the folder I pick. Fix it.” The assistant can trace the selected folder from the file picker to the save operation, fix the issue, and try an export to see where the file lands.
 
 ## Acknowledgments
 
